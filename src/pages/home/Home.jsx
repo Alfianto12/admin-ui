@@ -9,7 +9,7 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar/>
-        <div className="widget">
+        <div className="widgets">
           <Widget />
           <Widget />
           <Widget />
