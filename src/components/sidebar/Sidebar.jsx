@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 //Tag <p> hanya untuk pemisah kategori menu.
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+	<div className="sidebar">
   <div className="top">
     <Link to="/">
       <span className="logo">Store</span>
