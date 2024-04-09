@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-
-//Tag <p> hanya untuk pemisah kategori menu.
+//
 const Sidebar = () => {
   return (
-	<div className="sidebar">
+    <div className="sidebar">
   <div className="top">
     <Link to="/">
       <span className="logo">Store</span>
@@ -45,8 +44,7 @@ const Sidebar = () => {
     <div className="colorOption"></div>
   </div>
 </div>
-    
-  );
-};
+  )
+}
 
 export default Sidebar;
