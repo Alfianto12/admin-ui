@@ -2,20 +2,25 @@ import "./home.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Widget from "../../components/widget/Widget";
+import Chart from "../../components/chart/Chart";
 
 const Home = () => {
   return (
     <div className="home">
       <Sidebar />
       <div className="homeContainer">
-        <Navbar />
+        <Navbar/>
         <div className="widgets">
-          <widget />
-          <widget />
-          <widget />
-          <widget />
+          <Widget type="user"/>
+          <Widget type="order"/>
+          <Widget type="earning"/>
+          <Widget type="balance"/>
         </div>
-      </div>
+        <div className="charts">
+          <Chart type="order" aspect={2/1}/>
+          <Chart type="earning" aspect={2/1}/>
+        </div>
+        </div>
     </div>
   );
 };
