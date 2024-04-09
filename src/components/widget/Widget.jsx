@@ -2,8 +2,11 @@ import "./widget.scss";
 
 const Widget = () => {
   return (
-    <div>Widget</div>
-  )
-}
+    <div className="widget">
+      <div className="left"></div>
+      <div className="right"></div>
+    </div>
+  );
+};
 
-export default Widget
+export default Widget;
