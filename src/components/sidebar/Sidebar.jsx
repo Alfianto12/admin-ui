@@ -4,7 +4,7 @@ import DashboardIcon from '@mui/icons-material/Dashboard';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import Inventory2Icon from '@mui/icons-material/Inventory2';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import InsertEmoticonIcon from '@mui/icons-material/InsertEmoticon';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 
