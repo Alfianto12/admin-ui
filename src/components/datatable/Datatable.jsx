@@ -1,5 +1,6 @@
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
+import { Link } from "react-router-dom";
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -33,12 +34,29 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
 
+const actionColumn = [
+  {
+    field: "action",
+    headerName: "Action",
+    width: 200,
+    renderCell: () => {
+      return (
+        <div className="cellAction">
+          <Link to="/users/test" style={{ textDecoration: "none" }}>
+            <div className="viewButton">View</div>
+          </Link>
+        </div>
+      );
+    },
+  },
+];
+
 const Datatable = () => {
   return (
     <div className="datatable">
       <DataGrid
         rows={rows}
-        columns={columns}
+        columns={columns.concat(actionColumn)}
         initialState={{
           pagination: {
             paginationModel: { page: 0, pageSize: 5 },
