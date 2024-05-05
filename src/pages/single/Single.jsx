@@ -8,7 +8,11 @@ const Single = () => {
       <Sidebar />
       <div className="singleContainer">
         <Navbar />
-        single
+        <div className="top">
+          <div className="left">top left</div>
+          <div className="right">top right</div>
+        </div>
+        <div className="bottom">bottom</div>
       </div>
     </div>
   );
