@@ -8,10 +8,11 @@ import Mylist from "./pages/mylist/Mylist";
 import Widget from "./components/widget/Widget";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs, userInputs } from "./formsource";
+import "./style/dark.scss";
 
 function App() {
   return (
-    <>
+    <div className="app dark">
       <BrowserRouter>
         <Routes>
           <Route path="/">
@@ -40,7 +41,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
 
   );
 }
