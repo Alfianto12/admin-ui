@@ -5,6 +5,8 @@ import { DarkModeContext } from "../../context/darkModeContext";
 import { useContext } from "react";
 
 const Navbar = () => {
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <div className="navbar">
       <div className="wrapper">
@@ -14,12 +16,12 @@ const Navbar = () => {
         </div>
         <div className="items">
           <div className="item">
-            <DarkModeOutlinedIcon className="icon"
-            onclick={() => dispatch({ type: "TOGGLE" })} />
+            <DarkModeOutlinedIcon className="icon" 
+            onClick={() => dispatch({ type: "TOGGLE"})} />
           </div>
           <div className="item">
             <img
-              src="https://images.unsplash.com/photo-1700553792546-3fbfc6b6613e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://static.miraheze.org/bluearchivewiki/c/c2/Hoshino_%28Swimsuit%29.png"
               alt=""
               className="avatar"
             />
