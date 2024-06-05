@@ -108,4 +108,4 @@ const Mydatatable = () => {
 
     ;
 
-export default Mydatatable;
+export default MyDatatable;

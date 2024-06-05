@@ -1,7 +1,7 @@
 import "./mylist.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
-import Mydatatable from "../../components/mydatatable/Mydatatable";
+import Mydatatable from "../../components/mydatatable/MyDatatable";
 import Widget from "../../components/widget/Widget";
 
 const Mylist = () => {
@@ -20,4 +20,4 @@ const Mylist = () => {
     );
 };
 
-export default Mylist;
+export default MyList;
