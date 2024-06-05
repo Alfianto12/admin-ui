@@ -17,7 +17,7 @@ const MyList = () => {
           <Widget type="earning" />
         </div>
         <div className="table">
-          <MyDatatable title="All Data" />
+          <MyDatatable title="All Data." />
         </div>
       </div>
     </div>
