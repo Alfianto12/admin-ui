@@ -21,7 +21,7 @@ function App() {
   const RequireAuth = ({ children }) => {
     return currentUser ? children : <Navigate to="/login" />;
   };
-
+  
   const NotRequireAuth = ({ children }) => {
     return currentUser ? <Navigate to="/" /> : children;
   };
